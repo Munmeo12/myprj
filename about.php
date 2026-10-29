@@ -19,8 +19,8 @@
     <h1>Thông Tin Cá Nhân</h1>
     
     <div class="info-item"><span class="info-label">Họ và Tên:</span> Trần Thị Hà Anh</div>
-    <div class="info-item"><span class="info-label">Ngành học:</span> Công nghệ thông tin / Máy tính</div>
-    <div class="info-item"><span class="info-label">Học phần:</span> Lập trình Web với PHP</div>
+    <div class="info-item"><span class="info-label">Ngành học:</span> Toán ứng dụng</div>
+    <div class="info-item"><span class="info-label">Học phần:</span> Lập trình Web</div>
 
     <div class="projects">
         <h2>Các Dự Án Đã Làm</h2>
