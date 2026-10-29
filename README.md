@@ -1,20 +1,26 @@
 # BÀI TẬP LỚN MÔN LẬP TRÌNH WEB - NHÓM 3
 ## ĐỀ TÀI: XÂY DỰNG WEBSITE TIN TỨC / BLOG CÓ TRANG QUẢN TRỊ (ADMIN PORTAL)
+
 ---
 
-## 1. Danh sách thành viên và phân công công việc:
-1. **Trần Thị Hà Anh** - MSSV: 224001713 (Trưởng nhóm)
+## 1. Danh sách thành viên và Phân công công việc
+
+1. **Trần Thị Hà Anh** - MSSV: 224001713 (**Trưởng nhóm**)
    - **Phân công**: Quản lý tiến độ nhóm; Thiết kế và xây dựng Form Đăng ký Admin (`register.php`); Viết xử lý Server-side Validation; Mã hóa dữ liệu chống tấn công XSS và cài đặt chức năng Upload ảnh đại diện an toàn; Quản lý tài khoản, phân quyền và duyệt bình luận; Thiết kế cấu trúc CSDL và truy vấn SQL cá nhân.
+
 2. **Nguyễn Hải Vân** - MSSV: 224001759
    - **Phân công**: Phân tích yêu cầu bài tập lớn; Thiết kế giao diện HTML/CSS, bố cục Layout Responsive cho Form và các trang quản trị; Quản lý Chuyên mục và thiết kế màn hình duyệt bài viết; Viết truy vấn SQL cá nhân.
+
 3. **Đào Khánh Trung** - MSSV: 224001757
    - **Phân công**: Xây dựng sơ đồ Wireframe cho các màn hình/form chính; Tổng hợp bảng quy tắc Server-side Validation; Quản lý bài viết của Tác giả, xử lý Upload file bài viết và thẻ Tag; Viết tài liệu `README.md` dự án nhóm và truy vấn SQL cá nhân.
+
 4. **Nguyễn Trung Vũ Học** - MSSV: 224001719
    - **Phân công**: Thiết kế cấu trúc thư mục dự án; Định nghĩa danh sách Route/Trang chức năng dự kiến; Xây dựng trang hiển thị tin tức, chi tiết bài viết và tìm kiếm; Hỗ trợ kiểm thử (Testing) kịch bản dữ liệu Form và viết truy vấn SQL cá nhân.
 
 ---
 
 ## 2. Danh sách Route / Trang chức năng dự kiến của Hệ thống
+
 - `/index.php`: Trang chủ hiển thị danh sách tin tức/bài viết mới nhất.
 - `/detail.php`: Trang chi tiết bài viết blog/tin tức.
 - `/admin/login.php`: Trang đăng nhập dành cho Quản trị viên.
@@ -25,6 +31,7 @@
 ---
 
 ## 3. Bảng Quy tắc Validation phía Server (Server-side Validation Rules)
+
 | Trường dữ liệu | Quy tắc Validation | Thông báo lỗi khi nhập sai |
 | :--- | :--- | :--- |
 | **Họ và tên** | Bắt buộc (`NotEmpty`), độ dài từ 3 đến 50 ký tự | "Họ và tên phải từ 3 đến 50 ký tự." |
@@ -37,6 +44,7 @@
 ---
 
 ## 4. Các giải pháp Bảo mật đã tích hợp trong Form
+
 1. **Chống tấn công XSS (Cross-Site Scripting):** Toàn bộ dữ liệu đầu ra được lọc và mã hóa bằng hàm `htmlspecialchars($str, ENT_QUOTES, 'UTF-8')`.
 2. **Xử lý Upload File An Toàn:**
    - Kiểm tra lỗi Upload và dung lượng file (≤ 2 MB).
