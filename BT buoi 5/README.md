@@ -81,16 +81,4 @@ Hệ thống Cơ sở dữ liệu được thiết kế trên MySQL engine `Inno
 ### 5.3. Hướng dẫn khởi tạo và nạp CSDL (Running Database Scripts)
 
 1. Mở công cụ quản trị CSDL (**DBeaver** hoặc **phpMyAdmin**).
-2. Tạo một Database mới có tên: **`news_blog_db`** (Chọn Bảng mã / Collation: `utf8mb4_unicode_ci`).
-3. Mở cửa sổ **SQL Editor** và nạp 2 file script SQL trong thư mục `database/` theo thứ tự:
-   - **Bước 1:** Chạy file `database/schema.sql` để khởi tạo cấu trúc 6 bảng, khóa chính, khóa ngoại và các ràng buộc `UNIQUE`.
-   - **Bước 2:** Chạy file `database/seed.sql` để nạp dữ liệu thử nghiệm tiếng Việt mẫu cho toàn bộ hệ thống.
-
----
-
-### 5.4. Danh sách File Truy vấn SQL Cá nhân (Individual Assignments)
-Mỗi thành viên trong nhóm phụ trách kiểm thử dữ liệu và lưu các câu truy vấn `SELECT` nâng cao (sử dụng `JOIN`, `WHERE`, `GROUP BY`, `LIMIT/OFFSET`) trong thư mục `docs/`:
-- **Trần Thị Hà Anh:** `docs/CaNhanHaAnh.sql`
-- **Nguyễn Hải Vân:** `docs/CaNhanHVan.sql`
-- **Đào Khánh Trung:** `docs/CaNhanTrung.sql`
-- **Nguyễn Trung Vũ Học:** `docs/CaNhanHoc.sql`
+2. Tạo một Database mới có tên: **`news_blog_db`** (Chọn Bảng mã / Collation:
