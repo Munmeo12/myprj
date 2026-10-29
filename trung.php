@@ -1,0 +1,1 @@
+   <?php echo 'Xin chào Ktrung1'; ?>
